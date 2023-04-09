@@ -21,7 +21,7 @@ function GalleryItem({ photo, index, flippedIndex, handleFlip }) {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center top',
                 fontSize: '40px',
-                color: 'green',
+                color: 'black',
                 margin: '20px',
                 borderRadius: '4px',
                 textAlign: 'center',
