@@ -8,7 +8,7 @@ import Grid from '@mui/material/Grid';
 function App() {
   const [gallery, setGallery] = useState([])
   const [flippedIndex, setFlippedIndex] = useState(-1);
-  
+  const [likeCount, setLikeCount] = useState(0);
 
   // Axios GET Request to get photos from the server
   const getGallery = () => {
@@ -26,7 +26,6 @@ function App() {
   const handleFlip = (index) => {
     setFlippedIndex(index === flippedIndex ? -1 : index);
   }
-  const [likeCount, setLikeCount] = useState(0);
 //function to add like to photo, and set state to +1
   const handleLike = (index) => {setLikeCount(likeCount + 1)}
 
