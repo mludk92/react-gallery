@@ -3,12 +3,12 @@ import ReactCardFlip from "react-card-flip";
 
 
 
-function GalleryItem({ photo, index, flippedIndex, handleFlip, handleLike }) {
-  const [likeCount, setLikeCount] = useState(photo.likes);
-
-  const handlePhotoLike = () => {
-    setLikeCount(likeCount + 1);
-  };
+function GalleryItem({ photo, index, flippedIndex, handleFlip }) {
+    const [likeCount, setLikeCount] = useState(photo.likes);
+  
+    const handleLike = () => {
+      setLikeCount(prevLikeCount => prevLikeCount + 1);
+    };
 
     return (
         <div>
@@ -62,7 +62,7 @@ function GalleryItem({ photo, index, flippedIndex, handleFlip, handleLike }) {
                     position: 'absolute',
                     top: '10px',
                     left: '30px'
-                  }}>{likeCount}
+                  }}>{likeCount} Likes
                  </div>
                 </div>
                 <div style={{
@@ -89,7 +89,7 @@ function GalleryItem({ photo, index, flippedIndex, handleFlip, handleLike }) {
                     position: 'absolute',
                     top: '10px',
                     left: '30px'
-                  }}>{likeCount}
+                  }}>{likeCount} Likes
                  </div>
                   <button style={{
                     width: '100px',
