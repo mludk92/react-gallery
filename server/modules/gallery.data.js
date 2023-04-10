@@ -37,6 +37,23 @@ const galleryItems = [
     description:`Marine Corps Ball with my then girlfriend, now wife. Chisinau, Moldova. My last 
     Marine ball, but the most memorable. The end of one era and a the start of a new. ` ,
     likes: 0,},
+    {id: 7 , 
+    title: 'AppTrail',
+    path: 'images/AppTrail.jpg',
+    description:`Start of the Appalachian Trail, Springer Mountain, Georgia. Walked 500 miles, and 
+    would not walk 500 more. ` ,
+    likes: 0,},
+    {id: 8, 
+    title: 'MountBlanc',
+    path: 'images/MountBlanc.jpg',
+    description:`Mount Blanc, France. The highest point in the Alps. ` ,
+    likes: 0,},
+    {id: 9, 
+    title: 'Fuji',
+    path: 'images/Fuji.jpg',
+    description:`Mount Fuji, Japan. The highest point in Japan. Was
+    extremely hungover on this summit, Roppongi is just a bit to much fun.` ,
+    likes: 0,},
 ];
 
 module.exports = galleryItems;
